@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mak's Lens</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Coiny&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- font awesome/custom css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Mak's Lens",
+          "url": "http://cons0099.github.io/portfolio",
+          "description": "A portfolio showcasing Makaya's photography including portraits, family moments, and events.",
+          "inLanguage": "en",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Mak's Lens",
+          },
+        }
+    </script>
+
+</head>
+
+<body>
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <div>
+        <!-- logo section -->
+        <div class="container mt-3">
+            <div class="row align-items-center" role="banner">
+                <div class="col-3">
+                    <img src="./images/left-decorative.svg" alt="Decorative leaf pattern" class="img-fluid">
+                </div>
+                <div class="col-6 text-center py-3">
+                    <picture>
+                        <!-- desktop screen -->
+                        <source srcset="
+                                        ./images/logo-149x105.svg,
+                                        ./images/logo-298x210.svg 2x,
+                                        ./images/logo-447x315.svg 3x" media="(min-width: 1028px)">
+
+                        <!-- tablet screen -->
+                        <source srcset="
+                                        ./images/logo-93x71.svg,
+                                        ./images/logo-186x142.svg 2x,
+                                        ./images/logo-279x213.svg 3x" media="(min-width: 768px)">
+
+                        <!-- mobile screens -->
+                        <img src="./images/logo-47x36.svg" srcset="./images/logo-47x36.svg,
+                                    ./images/logo-94x72.svg 2x,
+                                    ./images/logo-141x108.svg 3x" alt="mak's lens logo" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col-3 text-end">
+                    <img src="./images/right-decorative.svg" alt="Decorative leaf pattern" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg w-100 bg-transparent" role="navigation">
+            <div class="container">
+                <!-- hamburger menu fixed to right -->
+                <div class="d-flex justify-content-end w-100 d-lg-none">
+                    <div class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                </div>
+                </div>
+
+                <!-- hamburger menu -->
+                <div class="collapse navbar-collapse mobile-menu-bg mt-2 rounded" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-lg-3">
+                            <a class="nav-link active fw-medium py-2" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-lg-3">
+                            <a class="nav-link fw-medium py-2" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item mx-lg-3">
+                            <a class="nav-link fw-medium py-2" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item mx-lg-3">
+                            <a class="nav-link fw-medium py-2" href="#">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main role="main">
+        <!-- banner image -->
+        <div class="w-100 border-3 border-secondary">
+            <picture>
+                <!-- Desktop screen (1050x163) -->
+                <source srcset="
+                                        ./images/treebanner-1050x163.png,
+                                        ./images/treebanner-2100x326.png 2x,
+                                        ./images/treebanner-3150x489.png 3x" media="(min-width: 1028px)">
+
+                <!-- For tablet, using mobile version as fallback -->
+                <source srcset="
+                                        ./images/treebanner-400x111.png,
+                                        ./images/treebanner-800x222.png 2x,
+                                        ./images/treebanner-1200x333.png 3x"
+                    media="(min-width: 768px) and (max-width: 1027px)">
+
+                <!-- Mobile screens (400x111) -->
+                <img src="./images/treebanner-400x111.png" srcset="./images/treebanner-400x111.png,
+                                    ./images/treebanner-800x222.png 2x,
+                                    ./images/treebanner-1200x333.png 3x" alt="Tree banner" class="img-fluid w-100">
+            </picture>
+        </div>
+
+
+        <!-- Portfolio section -->
+        <div class="container py-4">
+            <!-- Portfolio Card -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="portfolio-card d-flex">
+                        <div class="portfolio-content col-md-6">
+                            <h1 class="portfolio-title">Portfolio</h1>
+                            <p class="portfolio-text">A compilation of all my best work over the years!</p>
+                            <button class="btn btn-see-more">See More</button>
+                        </div>
+                        <div class="portfolio-image-container col-md-6 p-0">
+                            <picture>
+                                <!-- Desktop screen (1050x163) -->
+                                <source srcset="
+                                                        ./images/chancetrain-278x495.jpg,
+                                                        ./images/chancetrain-556x990.jpg 2x,
+                                                        ./images/chancetrain-834x1485.jpg 3x"
+                                    media="(min-width: 1028px)">
+
+                                <!-- For tablet, using mobile version as fallback -->
+                                <source srcset="
+                                                        ./images/chancetrain-206x335.jpg,
+                                                        ./images/chancetrain-412x670.jpg 2x,
+                                                        ./images/chancetrain-618x1005.jpg 3x"
+                                    media="(min-width: 768px) and (max-width: 1027px)">
+
+                                <!-- Mobile screens (400x111) -->
+                                <img src="./images/chancetrain-126x286.jpg" srcset="./images/chancetrain-126x286.jpg,
+                                                    ./images/chancetrain-252x572.jpg 2x,
+                                                    ./images/chancetrain-378x858.jpg 3x" alt="client in subway"
+                                    class="img-fluid w-100">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media Bar -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="social-bar">
+                        <a href="https://www.facebook.com" target="_blank" class="text-decoration-none me-3">
+                            <i class="fa-brands fa-square-facebook fs-5" style="color: #212950;"> facebook</i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="text-decoration-none me-3">
+                            <i class="fa-brands fa-instagram fs-5" style="color: #212950;"> instagram</i>
+                        </a>
+                        <a href="https://x.com" target="_blank" class="text-decoration-none">
+                            <i class="fa-brands fa-twitter fs-5" style="color: #212950;"> twitter</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="container py-4" aria-label="Portraits">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Portrait Card with side-by-side layout for tablet/desktop -->
+                        <div class="portrait-card d-flex">
+                            <div class="portrait-image-container col-md-6 p-0">
+                                <picture>
+                                    <!-- desktop screen (557x304) -->
+                                    <source srcset="./images/chanceguitar-557x304.png,
+                                                        ./images/chanceguitar-1114x608.png 2x,
+                                                        ./images/chanceguitar-1671x912.png 3x"
+                                        media="(min-width: 1028px)">
+
+                                    <!-- tablet screen (287x383) -->
+                                    <source srcset="./images/chanceguitar-383x287.png,
+                                                        ./images/chanceguitar-766x574.png 2x,
+                                                        ./images/chanceguitar-1149x861.png 3x"
+                                        media="(min-width: 768px)">
+
+                                    <img src="./images/chanceguitar-383x287.png" alt="Client playing guitar"
+                                        class="img-fluid h-100 w-100 object-fit-cover">
+                                </picture>
+                            </div>
+                            <div class="portrait-content col-md-6">
+                                <h1 class="portrait-title">Portrait</h1>
+                                <p class="portrait-quote">"Makaya made me feel so comfortable in front of the camera.
+                                    Her
+                                    warm
+                                    and calming presence made putting myself first into something truly enjoyable. The
+                                    photos
+                                    turned out amazing!"</p>
+                                <p class="portrait-author">- Nasha Patt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- family card -->
+
+            <div class="container py-4" aria-label="Family Photography">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Portrait Card with side-by-side layout for tablet/desktop -->
+                        <div class="portrait-card d-flex">
+                            <div class="portrait-content col-md-6">
+                                <h1 class="portrait-title">Family</h1>
+                                <p class="portfolio-text">Live through your memories and allow me to help capture them
+                                    for
+                                    you
+                                    and generations to come!</p>
+                            </div>
+                            <div class="portrait-image-container col-md-6 p">
+                                <picture>
+                                    <!-- desktop screen (557x304) -->
+                                    <source srcset="./images/family-261x477.jpg,
+                                                        ./images/family-522x954.jpg 2x,
+                                                        ./images/family-783x1431.jpg 3x" media="(min-width: 1028px)">
+
+                                    <!-- tablet screen (287x383) -->
+                                    <source srcset="./images/family-287x383.jpg,
+                                                        ./images/family-574x766.jpg 2x,
+                                                        ./images/family-861x1149.jpg 3x" media="(min-width: 768px)">
+
+                                    <img src="./images/family-151x286.jpg" srcset="./images/family-151x286.jpg,
+                                                        ./images/family-302x572.jpg 2x,
+                                                        ./images/family-453x286.jpg 3x" alt="client family photo"
+                                        class="img-fluid w-100">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- wedding card -->
+
+            <div class="container py-4" aria-label="Wedding Photography">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Portrait Card with side-by-side layout for tablet/desktop -->
+                        <div class="portrait-card d-flex">
+                            <div class="portrait-image-container col-md-6">
+                                <picture>
+                                    <!-- desktop screen (557x304) -->
+                                    <source srcset="./images/wedding-344x557.jpg,
+                                                        ./images/wedding-688x1114.jpg 2x,
+                                                        ./images/wedding-1032x1671.jpg 3x" media="(min-width: 1028px)">
+
+                                    <!-- tablet screen (287x383) -->
+                                    <source srcset="./images/wedding-287x383.jpg,
+                                                        ./images/wedding-574x766.jpg 2x,
+                                                        ./images/wedding-861x1149.jpg 3x" media="(min-width: 768px)">
+
+                                    <img src="./images/wedding-151x286.jpg" srcset="./images/wedding-151x286.jpg,
+                                                        ./images/wedding-302x572.jpg 2x,
+                                                        ./images/wedding-453x858.jpg.jpg 3x" alt="client wedding photo"
+                                        class="img-fluid w-100">
+                                </picture>
+                            </div>
+                            <div class="portrait-content col-md-6">
+                                <h1 class="portrait-title">Wedding</h1>
+                                <p class="portfolio-text">Event Photography</p>
+                                <p class="portfolio-text">Let me help you capture your event and allow yourself to live
+                                    in
+                                    it
+                                    yourself fully.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- specialties section -->
+            <div class="container mt-3" aria-label="Specialties Section">
+
+
+                <!-- Specialty Pills -->
+                <div class="container">
+                    <h2 class="mb-4 text-brown">Specialties</h2>
+
+                    <div class="row">
+                        <!-- Event Photography -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="position-relative specialty-item">
+                                <svg class="w-100" viewBox="0 0 150 50" preserveAspectRatio="xMidYMid meet">
+                                    <ellipse cx="75" cy="25" rx="70" ry="20" fill="#F4CE81" />
+                                </svg>
+                                <h3 class="position-absolute specialty-text">Event Photography</h3>
+                            </div>
+                        </div>
+
+                        <!-- Family -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="position-relative specialty-item">
+                                <svg class="w-100" viewBox="0 0 150 50" preserveAspectRatio="xMidYMid meet">
+                                    <ellipse cx="75" cy="25" rx="70" ry="20" fill="#F4CE81" />
+                                </svg>
+                                <h3 class="position-absolute specialty-text">Family</h3>
+                            </div>
+                        </div>
+
+                        <!-- Lifestyle -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="position-relative specialty-item">
+                                <svg class="w-100" viewBox="0 0 170 50" preserveAspectRatio="xMidYMid meet">
+                                    <ellipse cx="85" cy="25" rx="80" ry="20" fill="#F4CE81" />
+                                </svg>
+                                <h3 class="position-absolute specialty-text">Lifestyle</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-purple-700 py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Navigation Links -->
+                <div class="col-md-6">
+                    <nav class="d-flex flex-wrap">
+                        <a href="#" class="text-decoration-none me-4 text-light-blue">Home</a>
+                        <a href="#" class="text-decoration-none me-4 text-light-blue">About</a>
+                        <a href="#" class="text-decoration-none me-4 text-light-blue">Contact</a>
+                        <a href="#" class="text-decoration-none text-light-blue">Portfolio</a>
+                    </nav>
+
+                    <!-- Social Media Icons -->
+                    <div class="mt-3">
+                        <a href="#" class="text-decoration-none me-3">
+                            <i class="bi bi-facebook text-light-blue fs-4">facebook</i>
+                        </a>
+                        <a href="#" class="text-decoration-none me-3">
+                            <i class="bi bi-instagram text-light-blue fs-4">instagram</i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="bi bi-twitter text-light-blue fs-4">twitter</i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- camera icon -->
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap js bundle with popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
